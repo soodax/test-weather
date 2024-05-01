@@ -76,7 +76,6 @@
 
     &__col-medium {
         flex: 1 1 40%;
-        // margin: 0 10px 0 0;
 
         @media (max-width: 500px) {
             margin: 0 0 10px 0;
@@ -85,17 +84,11 @@
 
     &__col-small {
         flex: 1 1 30%;
-        // margin: 0 0 0 10px;
 
         @media (max-width: 500px) {
             margin: 0 0 10px 0;
         }
     }
-
-    // &__col-small div {
-    //     display: flex;
-    //     align-items: center;
-    // }
 
     &__col-small ul li {
         font-weight: 500;
@@ -122,8 +115,6 @@
         margin: 0 0 0 5px;
     }
 
-
-
     &__icon {
         max-width: 16px;
         max-height: 16px;
@@ -141,4 +132,11 @@
         max-height: 128px;
     }
     
+}
+
+.main-flex-container {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr); 
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 20px; 
 }
